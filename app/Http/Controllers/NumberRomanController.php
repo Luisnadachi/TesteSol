@@ -12,13 +12,14 @@ class NumberRomanController extends Controller
 
     public function __construct(NumberRomanService $service)
     {
-
         $this->service = $service;
     }
 
     public function NumberRoman(Request $request)
     {
-      return $this->service->parse($request->input('text'));
+        return response()->json(
+            $this->service->parse($request->input('text'))
+        );
     }
 
 }

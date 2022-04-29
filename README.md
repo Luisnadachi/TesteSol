@@ -1,24 +1,26 @@
-# Lumen PHP Framework
+# Teste de Emprego Studio Sol
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
+O teste consiste em criar uma API Rest que recebe uma palavra e localiza dentro dela o maior número romano.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Resolução do Projeto
 
-## Official Documentation
+Utilizei para resolver o projeto PHP com a framework Lumen. A ideia do projeto achei bem interessante porque deu para praticar bastante minha lógica, clean code e testes, o ponto que eu posso dizer que eu fiquei mais tempo foi desenvolver a lógica para a separação dos números romanos dentro da palavra.
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Um ponto que eu queria comentar era a disponibilização de mais exemplos além do que foi colocado para termos uma visão maior sobre o problema proposto.
 
-## Contributing
+## Como rodar o projeto
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```
+1 - composer install
+2 - php -S 0.0.0.0:8000 -t public
+3 - mande um post para /search com o parâmetro text
+```
 
-## Security Vulnerabilities
+## Como rodar os testes
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Foi implementado uma suite de testes bem simples com PHPUnit para auxiliar na criação do projeto e para rodar basta executar o comando abaixo:
+```bash
+$ vendor/bin/phpunit --testdox
+```
 
-## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
